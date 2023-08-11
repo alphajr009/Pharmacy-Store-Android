@@ -134,6 +134,15 @@ class RegisterActivity : AppCompatActivity() {
         return super.dispatchTouchEvent(ev)
     }
 
+    override fun onStop() {
+        super.onStop()
+
+        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putBoolean("isFirstLaunch", false)
+        editor.apply()
+    }
+
     private fun saveUserToFirestore(user: User) {
         db.collection("users")
             .add(user)

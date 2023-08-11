@@ -21,11 +21,11 @@ class DivideBegin : AppCompatActivity() {
             return
         }else {
             startActivity(Intent(this, LoginActivity::class.java))
-//            val sharedPrefManager = SharedPrefManager(this)
-//            if (sharedPrefManager.isLoggedIn()) {
-//                startActivity(Intent(this, UserLandingPage::class.java))
-//                finish() // Close the DivideActivity
-//            }
+            val sharedPrefManager = SharedPrefManager(this)
+            if (sharedPrefManager.isLoggedIn()) {
+                startActivity(Intent(this, UserLandingPage::class.java))
+                finish() // Close the DivideActivity
+            }
 
         }
 

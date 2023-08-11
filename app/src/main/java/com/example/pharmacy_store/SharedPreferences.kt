@@ -8,7 +8,7 @@ class SharedPrefManager(private val context: Context) {
     private val editor: SharedPreferences.Editor = sharedPreferences.edit()
 
     companion object {
-        private const val SHARED_PREF_NAME = "mediswift_project_pref"
+        private const val SHARED_PREF_NAME = "worklk_madproject_pref"
         private const val KEY_IS_LOGGED_IN = "key_is_logged_in"
         private const val KEY_USER_ID = "key_user_id"
         private const val KEY_USER_UID = "key_user_uid"
