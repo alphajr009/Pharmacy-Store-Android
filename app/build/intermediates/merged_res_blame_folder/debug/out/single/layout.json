@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\fragment_security.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\fragment_security.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\login.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\sign_up_sucess.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\sign_up_sucess.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\register.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\register.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\start_screen.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\start_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\userhomepage.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\userhomepage.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\fragment_saved.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\fragment_saved.xml"
+    },
+    {
+        "merged": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-mergeDebugResources-49:\\layout\\fragment_about.xml",
+        "source": "C:\\Users\\pasin\\.gradle\\daemon\\7.5\\com.example.pharmacy_store.app-main-52:\\layout\\fragment_about.xml"
+    },
+    {
+        "merged": "com.example.pharmacy_store.app-mergeDebugResources-49:/layout/delete_account_dialog.xml",
+        "source": "com.example.pharmacy_store.app-main-52:/layout/delete_account_dialog.xml"
+    }
+]
