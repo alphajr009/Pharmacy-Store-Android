@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F0F0F0" /> <!-- Change this color to the desired gray color -->
+    <corners android:radius="8dp" /> <!-- Change the radius value to set the desired border radius -->
+    <stroke android:color="#C0C0C0" android:width="1dp" /> <!-- Optional: Add a border with color and width -->
+</shape>

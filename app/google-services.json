@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250250552247",
+    "project_id": "mediswift-f598a",
+    "storage_bucket": "mediswift-f598a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250250552247:android:7e583f6524c201c8063e32",
+        "android_client_info": {
+          "package_name": "com.example.pharmacy_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250250552247-a2k5usoaacfcvvddqib30ahu60tqvct5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGob5922aYNhsUeY9EXSqhc0gDdk-oZqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250250552247-a2k5usoaacfcvvddqib30ahu60tqvct5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
