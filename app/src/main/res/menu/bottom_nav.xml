@@ -4,9 +4,9 @@
     <item android:title="Home"
         android:id="@+id/home"
         android:icon="@drawable/baseline_home_24"/>
-    <item android:title="Purchased"
+    <item android:title="Cart"
         android:id="@+id/saved"
-        android:icon="@drawable/baseline_shopping_bag_24"/>
+        android:icon="@drawable/baseline_shopping_cart_24"/>
     <item android:title="Profile"
         android:id="@+id/profile"
         android:icon="@drawable/baseline_account_circle_24"/>

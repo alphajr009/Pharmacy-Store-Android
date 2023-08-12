@@ -1,10 +1,13 @@
-package com.example.pharmacy_store
+package com.example.pharmacy_store.Adapters
 
 import SharedPrefManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pharmacy_store.LoginActivity
+import com.example.pharmacy_store.RegisterActivity
+import com.example.pharmacy_store.UserLandingPage
 
 class DivideBegin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

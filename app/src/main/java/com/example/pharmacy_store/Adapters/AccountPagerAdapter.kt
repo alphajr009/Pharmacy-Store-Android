@@ -1,7 +1,9 @@
-package com.example.pharmacy_store
+package com.example.pharmacy_store.Adapters
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.pharmacy_store.About
+import com.example.pharmacy_store.Security
 
 class AccountPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 

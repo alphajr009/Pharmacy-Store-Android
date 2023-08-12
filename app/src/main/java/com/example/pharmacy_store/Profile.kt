@@ -12,6 +12,8 @@ import android.widget.PopupMenu
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.example.pharmacy_store.Adapters.AccountPagerAdapter
+import com.example.pharmacy_store.Adapters.DivideBegin
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

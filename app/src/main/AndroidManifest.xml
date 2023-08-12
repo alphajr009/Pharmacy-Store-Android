@@ -17,7 +17,7 @@
             android:name=".SignUpActivitySucess"
             android:exported="false" />
         <activity
-            android:name=".DivideBegin"
+            android:name=".Adapters.DivideBegin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
