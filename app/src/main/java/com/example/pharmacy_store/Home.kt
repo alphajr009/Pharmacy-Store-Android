@@ -1,5 +1,6 @@
 package com.example.pharmacy_store
 
+import DetailsFragment
 import android.content.Context
 import android.os.Bundle
 import android.text.Editable
@@ -17,6 +18,8 @@ import com.example.pharmacy_store.Adapters.ProductOnClickInterface
 import com.example.pharmacy_store.Models.Item
 import com.example.pharmacy_store.databinding.FragmentHomeBinding
 import com.google.firebase.firestore.FirebaseFirestore
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 
 class Home : Fragment() {
 
@@ -54,8 +57,24 @@ class Home : Fragment() {
             mutableListOf(),
             object : ProductOnClickInterface {
                 override fun onClickProduct(item: Item) {
-                    // Handle item click here if needed
+                    val detailsFragment = DetailsFragment().apply {
+                        arguments = Bundle().apply {
+                            putString("name", item.name)
+                            putString("usage", item.usage)
+                            putString("composition", item.composition)
+                            putString("imageUrl", item.imageUrl)
+                            putInt("price", item.Price ?: 0)
+                            putInt("quantity", item.quantity ?: 0)
+                        }
+                    }
+
+                    val fragmentManager = requireActivity().supportFragmentManager
+                    val fragmentTransaction = fragmentManager.beginTransaction()
+                    fragmentTransaction.replace(R.id.framelayout, detailsFragment)
+                    fragmentTransaction.addToBackStack(null) // Add this line to enable back navigation
+                    fragmentTransaction.commit()
                 }
+
             }
         )
         binding.rvMainProductsList.adapter = itemAdapter

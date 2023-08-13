@@ -20,7 +20,7 @@ class UserLandingPage : AppCompatActivity() {
             when(it.itemId){
 
                 R.id.home -> replaceFragment(Home())
-                R.id.saved -> replaceFragment(Saved())
+                R.id.saved -> replaceFragment(CartFragment())
                 R.id.profile -> replaceFragment(Profile())
 
                 else -> {

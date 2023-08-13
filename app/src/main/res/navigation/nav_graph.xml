@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/HomeFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.pharmacy_store.FirstFragment"
+        android:id="@+id/HomeFragment"
+        android:name="com.example.pharmacy_store.Home"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_HomeFragment_to_DetaitsFragmnet"
+            app:destination="@id/DetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.pharmacy_store.SecondFragment"
+        android:id="@+id/DetailsFragment"
+        android:name="com.example.pharmacy_store.DetailsFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="item"
+            app:argType="com.example.pharmacy_store.Models.Item" />
     </fragment>
 </navigation>

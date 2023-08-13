@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/detailActualToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Details" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="676dp"
+
+        app:layout_constraintEnd_toEndOf="@id/detailToolbar"
+        app:layout_constraintStart_toStartOf="@id/detailToolbar"
+        app:layout_constraintTop_toBottomOf="@id/detailToolbar"
+
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivDetails"
+                android:layout_width="match_parent"
+                android:layout_height="431dp"
+                android:padding="20dp"
+                android:src="@drawable/fishoilmedi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvDetailsProductName"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Essence Probiotic"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Rs.195000"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_textbackground"
+                    android:padding="8dp"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stockAvailability"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="In Stock"
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usageTxt"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="General Usage"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usageDescirption"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="@string/ItemUsageDescription"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/compositionTxt"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Composition"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/compositionDescirption"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="@string/compositionDescription"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="47dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/cartlogo" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="257dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Buy Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
