@@ -6,11 +6,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.pharmacy_store.Models.CartModel
 import com.example.pharmacy_store.databinding.CartproductItemBinding
-import com.example.shoeapp.Models.CartModel
 import com.google.firebase.firestore.FirebaseFirestore
 import java.math.BigDecimal
 
+
+interface TotalPriceListener {
+    fun onTotalPriceUpdated(totalPrice: BigDecimal)
+}
 class CartAdapter(private val cartItems: MutableList<CartModel>,
                   private val subTotalView: TextView,
                   private val deliveryPriceView: TextView,
@@ -19,6 +23,7 @@ class CartAdapter(private val cartItems: MutableList<CartModel>,
 
     private val db = FirebaseFirestore.getInstance()
 
+    var totalPriceListener: TotalPriceListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartViewHolder {
         val binding =
             CartproductItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -83,6 +88,7 @@ class CartAdapter(private val cartItems: MutableList<CartModel>,
                 // Handle failure
             }
     }
+    private var totalPrice: BigDecimal = BigDecimal.ZERO
 
     fun updatePrices() {
         var subtotal = BigDecimal.ZERO
@@ -98,6 +104,9 @@ class CartAdapter(private val cartItems: MutableList<CartModel>,
         subTotalView.text = "Rs. ${subtotal.toPlainString()}"
         deliveryPriceView.text = "Rs. ${deliveryPrice.toPlainString()}"
         totalView.text = "Rs. ${totalPrice.toPlainString()}"
+
+        totalPriceListener?.onTotalPriceUpdated(totalPrice)
+
     }
 
     override fun getItemCount() = cartItems.size

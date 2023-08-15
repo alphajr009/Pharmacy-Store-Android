@@ -1,4 +1,4 @@
-package com.example.shoeapp.Models
+package com.example.pharmacy_store.Models
 
 data class CartModel(
 

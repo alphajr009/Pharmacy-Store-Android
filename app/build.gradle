@@ -54,4 +54,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
     implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.stripe:stripe-android:20.28.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation "com.stripe:stripe-java:22.2.0"
+    implementation "com.stripe:stripe-android:20.28.1"
+    implementation 'com.itextpdf:itextpdf:5.5.13'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
+    implementation 'com.android.volley:volley:1.2.1'
+
+
+
 }

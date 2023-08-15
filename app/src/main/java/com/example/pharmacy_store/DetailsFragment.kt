@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
+import com.example.pharmacy_store.Models.CartModel
 import com.example.pharmacy_store.R
 import com.example.pharmacy_store.databinding.FragmentDetailsBinding
-import com.example.shoeapp.Models.CartModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 

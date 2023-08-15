@@ -8,6 +8,6 @@ data class Item(
     val composition: String = "",
     val Price: Int? = null,
     val imageUrl: String = ""
-) {
+)
 
-}
+
